@@ -4,7 +4,14 @@
   background-size:cover;
   background-position:center;
 }
-
+.navbar-nav a{
+  padding:20px;
+  color:#fff;
+}
+a, a:hover, a:active, a:visited {
+  color:#000;
+  text-decoration: none;
+}
 .App {
   text-align: center;
 }
