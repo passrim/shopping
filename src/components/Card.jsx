@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom';
 function Card(props) {
   return (
     <>
-        <Link to="/shopping/detail">
-            <div className="col-md-4">
+        <div className="col-md-4">
+            <Link to="/shopping/detail">
                 <img src ={process.env.PUBLIC_URL + '/img/shoes' + (props.product.id+1) + '.jpg'} alt="" width="80%" />
                 <h4>{props.product.title}</h4>
                 <p>{props.product.content}</p>
-            </div>
-        </Link>
+            </Link>
+        </div>
     </>
   );
 }
