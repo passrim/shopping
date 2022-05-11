@@ -4,7 +4,7 @@
   background-size:cover;
   background-position:center;
 }
-.navbar-nav a{
+.navbar-nav a, .navbar-nav a:hover, .navbar-nav a:active, .navbar-nav a:visited{
   padding:20px;
   color:#fff;
 }
