@@ -4,23 +4,28 @@ import { Navbar, Container, Nav} from 'react-bootstrap';
 import './App.css';
 import Card from './components/Card';
 import Detail from './contents/Detail';
+import About from './contents/About';
 
 import Data from './data';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
-  let [product,setProduct] = useState(Data);
+  let [product] = useState(Data);
+  let navigate = useNavigate();
+
   return (
     <div className="App">
-      
 
       <Navbar bg="dark" variant="dark">
         <Container>
         <Navbar.Brand href="/shopping">ShoeShop</Navbar.Brand>
         <Nav className="me-auto">
-          <Link to="/shopping">Home</Link>
+          {/* <Link to="/shopping">Home</Link>
           <Link to="/shopping/detail">detail</Link>
-          <Link to="/shopping/about">about</Link>
+          <Link to="/shopping/about">about</Link> */}
+          <Nav.Link onClick={() => {navigate('/shopping')}}>Home</Nav.Link>
+          <Nav.Link onClick={() => {navigate('/shopping/detail')}}>detail</Nav.Link>
+          <Nav.Link onClick={() => {navigate('/shopping/about')}}>about</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
@@ -59,7 +64,13 @@ function App() {
         </>
       } />
         <Route path="/shopping/detail" element={<Detail product={product} />} />
-        <Route path="/shopping/about" element={<div>about페이지</div>} />
+        <Route path="/shopping/about" element={<About />}>
+          <Route path="member" element={<div>멤버페이지</div>} />
+          <Route path="location" element={<div>위치페이지</div>} />
+        </Route>
+        {/* <Route path="/shopping/about/member" element={<About />} />
+        <Route path="/shopping/about/location" element={<About />} /> */}
+        <Route path="*" element={<div>없는페이지</div>} />
       </Routes>
       
     </div>
