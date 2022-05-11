@@ -25,7 +25,7 @@ function App() {
         </Container>
       </Navbar>
       <Routes>
-        <Route exact path="/" element={
+        <Route exact path="/shopping" element={
         <>
           <div className="main-bg" /*style={{backgroundImage:'url(' + bg + ')'}}*/></div>
           <div className="container">
@@ -58,8 +58,8 @@ function App() {
           </div>
         </>
       } />
-        <Route path="/detail" element={<Detail product={product} />} />
-        <Route path="/about" element={<div>about페이지</div>} />
+        <Route path="/shopping/detail" element={<Detail product={product} />} />
+        <Route path="/shopping/about" element={<div>about페이지</div>} />
       </Routes>
       
     </div>
