@@ -16,11 +16,11 @@ function App() {
 
       <Navbar bg="dark" variant="dark">
         <Container>
-        <Navbar.Brand href="/">ShoeShop</Navbar.Brand>
+        <Navbar.Brand href="/shopping">ShoeShop</Navbar.Brand>
         <Nav className="me-auto">
-          <Link to="/">Home</Link>
-          <Link to="/detail">detail</Link>
-          <Link to="/about">about</Link>
+          <Link to="/shopping">Home</Link>
+          <Link to="/shopping/detail">detail</Link>
+          <Link to="/shopping/about">about</Link>
         </Nav>
         </Container>
       </Navbar>
