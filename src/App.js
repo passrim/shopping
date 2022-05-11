@@ -26,6 +26,8 @@ function App() {
           <Nav.Link onClick={() => {navigate('/shopping')}}>Home</Nav.Link>
           <Nav.Link onClick={() => {navigate('/shopping/detail')}}>detail</Nav.Link>
           <Nav.Link onClick={() => {navigate('/shopping/about')}}>about</Nav.Link>
+          <Nav.Link onClick={() => {navigate('/shopping/member')}}>about</Nav.Link>
+          <Nav.Link onClick={() => {navigate('/shopping/location')}}>about</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
