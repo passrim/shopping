@@ -41,6 +41,7 @@ a, a:hover, a:active, a:visited {
 }
 .navbar {
   overflow:scroll;
+  position:fixed;
 }
 .App-logo {
   height: 40vmin;
