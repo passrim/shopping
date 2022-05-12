@@ -45,7 +45,7 @@ function Main(props) {
           .catch(() => {
               console.log('실패하였습니다.')
           })
-        }}>버튼</button>
+        }}>더보기 버튼</button>
       </div>
       
     </>
