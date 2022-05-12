@@ -37,8 +37,11 @@ a, a:hover, a:active, a:visited {
 
 .App {
   text-align: center;
+  overflow-x:hidden;
 }
-
+.navbar {
+  overflow:scroll;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
