@@ -15,6 +15,26 @@ a, a:hover, a:active, a:visited {
   color:#000;
   text-decoration: none;
 }
+.start {
+  overflow:hidden;
+  position:relative;
+}
+
+.start > div{
+  position:relative;
+  left:-30%;
+  width:100%;
+  opacity:0;
+  padding:20px;
+  background:#fff;
+}
+
+.end > div {
+  left:0%;
+  opacity:1;
+  transition: all 1s;
+}
+
 .App {
   text-align: center;
 }

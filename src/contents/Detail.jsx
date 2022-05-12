@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from 'styled-components';
+import TabMenu from './../components/TabMenu';
 
 let YellowBtn = styled.button`
   background:${props11 => props11.bg};
@@ -18,6 +19,8 @@ let Box = styled.div`
 function Detail(props) {
   let [count,setCount] = useState(0);
   let [alert,setAlert] = useState(true);
+  let [tab,setTab] = useState(0);
+
   let {idd} = useParams();
   // console.log(idd);
   // console.log(props.product[idd].id);
@@ -61,9 +64,22 @@ function Detail(props) {
             <button className="btn btn-danger">주문하기</button> 
           </div>
         </div>
-      </div> 
+        <TabMenu tabBox={tab} setTabBox={setTab} />
+
+      </div>
     </>
   );
 }
 
+// function TabContent(props){
+//   if(props.tab === 0){
+//     return <div>내용1</div>
+//   }
+//   if(props.tab === 1){
+//     return <div>내용2</div>
+//   }
+//   if(props.tab === 2){
+//     return <div>내용3</div>
+//   }
+// }
 export default Detail;
