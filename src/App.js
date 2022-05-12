@@ -6,6 +6,7 @@ import './App.css';
 import Main from './contents/Main';
 import Detail from './contents/Detail';
 import About from './contents/About';
+import Members from './contents/Members';
 import Data from './data/data';
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
           <Nav.Link onClick={() => {navigate('/shopping')}}>Home</Nav.Link>
           <Nav.Link onClick={() => {navigate('/shopping/detail/0')}}>detail</Nav.Link>
           <Nav.Link onClick={() => {navigate('/shopping/about')}}>about</Nav.Link>
-          <Nav.Link onClick={() => {navigate('/shopping/member')}}>member</Nav.Link>
-          <Nav.Link onClick={() => {navigate('/shopping/location')}}>location</Nav.Link>
+          <Nav.Link onClick={() => {navigate('/shopping/about/member')}}>member</Nav.Link>
+          <Nav.Link onClick={() => {navigate('/shopping/about/location')}}>location</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
@@ -36,8 +37,8 @@ function App() {
         } />
         <Route path="/shopping/detail/:idd" element={<Detail product={product} />} />
         <Route path="/shopping/about" element={<About />}>
-          <Route path="member" element={<div>멤버페이지</div>} />
-          <Route path="location" element={<div>위치페이지</div>} />
+          <Route path="member" element={<Members />} />
+          <Route path="location" element={<div>위치페이지위치페이지위치페이지</div>} />
         </Route>
         {/* <Route path="/shopping/about/member" element={<About />} />
         <Route path="/shopping/about/location" element={<About />} /> */}
