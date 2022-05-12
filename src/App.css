@@ -38,10 +38,12 @@ a, a:hover, a:active, a:visited {
 .App {
   text-align: center;
   overflow-x:hidden;
+  padding-top:56px;
 }
 .navbar {
   overflow:scroll;
   position:fixed;
+  top:0;
 }
 .App-logo {
   height: 40vmin;
