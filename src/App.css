@@ -34,7 +34,7 @@ a, a:hover, a:active, a:visited {
   opacity:1;
   transition: all 1s;
 }
-
+button {border:none;padding:10px 20px;border-radius:20px;}
 .App {
   text-align: center;
   overflow-x:hidden;
@@ -44,6 +44,8 @@ a, a:hover, a:active, a:visited {
   overflow:scroll;
   position:fixed;
   top:0;
+  overflow-y: hidden;
+  width: 100%;
 }
 .App-logo {
   height: 40vmin;

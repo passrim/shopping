@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import './App.css';
 import Main from './contents/Main';
 import Detail from './contents/Detail';
+import Cart from './contents/Cart';
 import About from './contents/About';
 import Members from './contents/Members';
 import Data from './data/data';
@@ -42,6 +43,7 @@ function App() {
         </Route>
         {/* <Route path="/shopping/about/member" element={<About />} />
         <Route path="/shopping/about/location" element={<About />} /> */}
+        <Route path="/shopping/cart" element={<Cart />} />
         <Route path="*" element={<div>없는페이지</div>} />
       </Routes>
       
