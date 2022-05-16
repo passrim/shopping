@@ -47,7 +47,7 @@ function Main(props) {
           })
         }}>더보기 버튼+++</button>
       </div>
-      <div>test</div>
+      <div>testtest</div>
     </>
   );
 }
